@@ -415,18 +415,18 @@ local Window = Fluent:CreateWindow({
     Theme = "Darker",
     MinimizeKey = Enum.KeyCode.End })
 Window:AddMinimizeButton({
-  Button = { Image = "rbxassetid://18871428100", BackgroundTransparency = 0 },
+  Button = { Image = "rbxassetid://18811558048", BackgroundTransparency = 0 },
   Corner = { CornerRadius = UDim.new(0, 6) }
 })
 
 local Tabs = {
-  Discord = Window:MakeTab({"Discord", "Info"}),
-  MainFarm = Window:MakeTab({"Farm", "Home"}),
-  Items = Window:MakeTab({"Items", "Swords"}),
-  Stats = Window:MakeTab({"Stats", "Signal"}),
-  Teleport = Window:MakeTab({"Teleport", "Locate"}),
-  Shop = Window:MakeTab({"Shop", "ShoppingCart"}),
-  Misc = Window:MakeTab({"Misc", "Settings"})
+  Discord = Window:AddTab({"Discord", "Info"}),
+  MainFarm = Window:AddTab({"Farm", "Home"}),
+  Items = Window:AddTab({"Items", "Swords"}),
+  Stats = Window:AddTab({"Stats", "Signal"}),
+  Teleport = Window:AddTab({"Teleport", "Locate"}),
+  Shop = Window:AddTab({"Shop", "ShoppingCart"}),
+  Misc = Window:AddTab({"Misc", "Settings"})
 }
 
 Window:SelectTab(Tabs.MainFarm)
